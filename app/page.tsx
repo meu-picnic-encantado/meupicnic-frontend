@@ -4,8 +4,10 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Heart, MapPin, Clock, Users } from 'lucide-react';
 import Link from 'next/link';
+import { useI18n } from '@/src/providers/LanguageProvider';
 
 export default function Home() {
+  const { messages } = useI18n();
   return (
     <div className="min-h-screen">
       <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
@@ -17,10 +19,10 @@ export default function Home() {
         />
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance">
-            A arte de encantar momentos
+            {messages.home.heroTitle}
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-balance">
-            Transforme qualquer ocasião em uma experiência única e inesquecível
+            {messages.home.heroSubtitle}
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Button
@@ -29,7 +31,7 @@ export default function Home() {
               className="bg-[#A7C4BC] hover:bg-[#5B8A8A] text-white text-lg px-8"
             >
               <a href="https://wa.me/5547992459014" target="_blank" rel="noopener noreferrer">
-                Fale com a gente
+                {messages.cta.contactUs}
               </a>
             </Button>
             <Button
@@ -38,7 +40,7 @@ export default function Home() {
               variant="outline"
               className="bg-white/90 hover:bg-white text-[#5B8A8A] text-lg px-8 border-none"
             >
-              <Link href="/eventos">Ver Opções</Link>
+              <Link href="/eventos">{messages.cta.seeOptions}</Link>
             </Button>
           </div>
         </div>
@@ -48,9 +50,9 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-[#5B8A8A] text-4xl md:text-5xl font-bold mb-6 text-balance">
-                Meu Picnic Encantado
-              </h2>
+            <h2 className="text-[#5B8A8A] text-4xl md:text-5xl font-bold mb-6 text-balance">
+              Meu Picnic Encantado
+            </h2>
               <p className="text-[#2C3E50] text-lg leading-relaxed mb-6">
                 Transforme qualquer ocasião em uma experiência única e inesquecível. Aqui, cada detalhe é pensado com carinho para criar momentos de puro encanto. De piqueniques românticos a celebrações especiais, nossa missão é proporcionar a você o prazer de vivenciar a magia ao ar livre, com todo o conforto e beleza que você merece.
               </p>
@@ -96,7 +98,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-[#5B8A8A] text-4xl md:text-5xl font-bold mb-4">
-              Por que escolher a gente?
+              {messages.home.whyChoose}
             </h2>
           </div>
           <div className="grid md:grid-cols-4 gap-8">
@@ -164,10 +166,10 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-[#A7C4BC] text-sm font-bold mb-2 uppercase tracking-wider">
-                O início de um sonho
+                {messages.about.highlight}
               </h2>
               <h3 className="text-4xl md:text-5xl font-bold mb-8">
-                A história da nossa empresa começou em 2023
+                {messages.about.title}
               </h3>
             </div>
 
@@ -201,10 +203,10 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-[#5B8A8A] text-4xl md:text-5xl font-bold mb-6">
-            Pronto para criar seu momento inesquecível?
+            {messages.home.ready}
           </h2>
           <p className="text-[#2C3E50] text-xl mb-8 max-w-2xl mx-auto">
-            Entre em contato e vamos planejar juntos o seu picnic dos sonhos
+            {messages.home.letsPlan}
           </p>
           <Button
             asChild
@@ -212,7 +214,7 @@ export default function Home() {
             className="bg-[#A7C4BC] hover:bg-[#5B8A8A] text-white text-lg px-12"
           >
             <a href="https://wa.me/5547992459014" target="_blank" rel="noopener noreferrer">
-              Fale com a gente
+              {messages.cta.contactUs}
             </a>
           </Button>
         </div>

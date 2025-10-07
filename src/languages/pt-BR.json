@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "home": "Início",
+    "events": "Eventos",
+    "products": "Produtos",
+    "gallery": "Galeria",
+    "about": "Sobre"
+  },
+  "cta": {
+    "contactUs": "Fale com a gente",
+    "seeOptions": "Ver Opções",
+    "bookNow": "Reservar"
+  },
+  "brand": {
+    "name1": "Meu Picnic",
+    "name2": "Encantado"
+  },
+  "home": {
+    "heroTitle": "A arte de encantar momentos",
+    "heroSubtitle": "Transforme qualquer ocasião em uma experiência única e inesquecível",
+    "whyChoose": "Por que escolher a gente?",
+    "ready": "Pronto para criar seu momento inesquecível?",
+    "letsPlan": "Entre em contato e vamos planejar juntos o seu picnic dos sonhos"
+  },
+  "events": {
+    "title": "Nossos Eventos",
+    "subtitle": "Escolha o piquenique perfeito para você",
+    "types": "Tipos de Piquenique"
+  },
+  "products": {
+    "title": "Horários e Produtos",
+    "subtitle": "Escolha o horário perfeito para sua experiência",
+    "available": "Horários Disponíveis",
+    "included": "O que está incluído?",
+    "notFound": "Não encontrou o que procurava?",
+    "contactForCustom": "Podemos criar algo exclusivo e personalizado para você!",
+    "readyToBook": "Pronto para reservar seu horário?"
+  },
+  "gallery": {
+    "title": "Galeria",
+    "subtitle": "Veja nossos momentos encantados",
+    "works": "Nossos Trabalhos",
+    "join": "Quer fazer parte da nossa galeria?",
+    "reserve": "Reserve seu piquenique e crie memórias inesquecíveis"
+  },
+  "about": {
+    "highlight": "O início de um sonho",
+    "title": "A história da nossa empresa começou em 2023"
+  },
+  "contact": {
+    "title": "Contato",
+    "location": "Localização",
+    "city": "Itajaí, Santa Catarina",
+    "country": "Brasil"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "home": "Home",
+    "events": "Events",
+    "products": "Products",
+    "gallery": "Gallery",
+    "about": "About"
+  },
+  "cta": {
+    "contactUs": "Contact us",
+    "seeOptions": "See Options",
+    "bookNow": "Book Now"
+  },
+  "brand": {
+    "name1": "Meu Picnic",
+    "name2": "Encantado"
+  },
+  "home": {
+    "heroTitle": "The art of enchanting moments",
+    "heroSubtitle": "Turn any occasion into a unique and unforgettable experience",
+    "whyChoose": "Why choose us?",
+    "ready": "Ready to create your unforgettable moment?",
+    "letsPlan": "Get in touch and let's plan your dream picnic together"
+  },
+  "events": {
+    "title": "Our Events",
+    "subtitle": "Choose the perfect picnic for you",
+    "types": "Picnic Types"
+  },
+  "products": {
+    "title": "Schedules and Products",
+    "subtitle": "Choose the perfect time for your experience",
+    "available": "Available Schedules",
+    "included": "What's included?",
+    "notFound": "Didn't find what you were looking for?",
+    "contactForCustom": "We can create something exclusive, just for you!",
+    "readyToBook": "Ready to book your time?"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "See our enchanted moments",
+    "works": "Our Work",
+    "join": "Want to be part of our gallery?",
+    "reserve": "Book your picnic and create unforgettable memories"
+  },
+  "about": {
+    "highlight": "The beginning of a dream",
+    "title": "Our story began in 2023"
+  },
+  "contact": {
+    "title": "Contact",
+    "location": "Location",
+    "city": "Itajaí, Santa Catarina",
+    "country": "Brazil"
+  }
+}

@@ -1,18 +1,19 @@
 import { Instagram, Phone } from 'lucide-react';
+import Image from 'next/image';
+import { useI18n } from '@/src/providers/LanguageProvider';
 
 export function Footer() {
+  const { messages } = useI18n();
   return (
     <footer className="bg-[#A7C4BC] text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#5B8A8A] font-semibold">
-                MPE
-              </div>
+            <div className="flex items-center gap-3 mb-4">
+              <Image src="/logo.png" alt="Meu Picnic Encantado" width={40} height={40} className="rounded-full bg-white" />
               <div className="flex flex-col">
-                <span className="text-white font-bold text-base leading-none">Meu Picnic</span>
-                <span className="text-white/80 text-sm leading-none">Encantado</span>
+                <span className="text-white font-bold text-base leading-none">{messages.brand.name1}</span>
+                <span className="text-white/80 text-sm leading-none">{messages.brand.name2}</span>
               </div>
             </div>
             <p className="text-white/90 text-sm">
@@ -21,7 +22,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-bold text-lg mb-4">Contato</h3>
+            <h3 className="font-bold text-lg mb-4">{messages.contact.title}</h3>
             <div className="space-y-2">
               <a
                 href="tel:+5547992459014"
@@ -43,10 +44,10 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-bold text-lg mb-4">Localização</h3>
+            <h3 className="font-bold text-lg mb-4">{messages.contact.location}</h3>
             <p className="text-white/90 text-sm">
-              Itajaí, Santa Catarina<br />
-              Brasil
+              {messages.contact.city}<br />
+              {messages.contact.country}
             </p>
           </div>
         </div>
