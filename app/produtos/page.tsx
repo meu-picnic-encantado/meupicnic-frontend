@@ -3,6 +3,7 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Sunrise, Sun, Sunset, Moon } from 'lucide-react';
+import { useI18n } from '@/src/providers/LanguageProvider';
 
 const horarios = [
   {
@@ -36,6 +37,7 @@ const horarios = [
 ];
 
 export default function ProdutosPage() {
+  const { messages } = useI18n();
   return (
     <div className="min-h-screen">
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
@@ -47,10 +49,10 @@ export default function ProdutosPage() {
         />
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
           <h1 className="text-5xl md:text-6xl font-bold mb-4 text-balance">
-            Horários e Produtos
+            {messages.products.title}
           </h1>
           <p className="text-xl md:text-2xl text-balance max-w-2xl mx-auto">
-            Escolha o horário perfeito para sua experiência
+            {messages.products.subtitle}
           </p>
         </div>
       </section>
@@ -59,7 +61,7 @@ export default function ProdutosPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-[#5B8A8A] text-4xl font-bold mb-4">
-              Horários Disponíveis
+              {messages.products.available}
             </h2>
             <p className="text-[#2C3E50] text-lg max-w-2xl mx-auto">
               Oferecemos horários flexíveis para atender suas necessidades e criar o momento perfeito
@@ -119,7 +121,7 @@ export default function ProdutosPage() {
               <Sun className="w-10 h-10 text-[#5B8A8A]" />
             </div>
             <h2 className="text-[#5B8A8A] text-4xl font-bold mb-6">
-              O que está incluído?
+              {messages.products.included}
             </h2>
             <div className="grid md:grid-cols-2 gap-6 text-left">
               <div className="p-6 bg-[#FBF7F0] rounded-lg">
@@ -225,7 +227,7 @@ export default function ProdutosPage() {
       <section className="py-20 bg-[#A7C4BC]">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-white text-4xl font-bold mb-6">
-            Pronto para reservar seu horário?
+            {messages.products.readyToBook}
           </h2>
           <p className="text-white/90 text-xl mb-8 max-w-2xl mx-auto">
             Entre em contato conosco e vamos criar juntos o momento perfeito para você
@@ -236,7 +238,7 @@ export default function ProdutosPage() {
             className="bg-white text-[#5B8A8A] hover:bg-[#FBF7F0] text-lg px-12"
           >
             <a href="https://wa.me/5547992459014" target="_blank" rel="noopener noreferrer">
-              Fale com a gente
+              {messages.cta.contactUs}
             </a>
           </Button>
         </div>

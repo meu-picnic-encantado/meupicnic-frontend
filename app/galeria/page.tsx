@@ -3,6 +3,7 @@
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
 import { X } from 'lucide-react';
+import { useI18n } from '@/src/providers/LanguageProvider';
 
 const imagens = [
   {
@@ -62,6 +63,7 @@ const imagens = [
 ];
 
 export default function GaleriaPage() {
+  const { messages } = useI18n();
   const [imagemSelecionada, setImagemSelecionada] = useState<number | null>(null);
   const [filtro, setFiltro] = useState<string>('Todos');
 
@@ -82,10 +84,10 @@ export default function GaleriaPage() {
         />
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
           <h1 className="text-5xl md:text-6xl font-bold mb-4 text-balance">
-            Galeria
+            {messages.gallery.title}
           </h1>
           <p className="text-xl md:text-2xl text-balance max-w-2xl mx-auto">
-            Veja nossos momentos encantados
+            {messages.gallery.subtitle}
           </p>
         </div>
       </section>
@@ -94,7 +96,7 @@ export default function GaleriaPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-[#5B8A8A] text-4xl font-bold mb-6">
-              Nossos Trabalhos
+              {messages.gallery.works}
             </h2>
             <p className="text-[#2C3E50] text-lg mb-8 max-w-2xl mx-auto">
               Cada foto conta uma história única de momentos especiais criados com carinho
@@ -166,10 +168,10 @@ export default function GaleriaPage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-[#5B8A8A] text-4xl font-bold mb-6">
-            Quer fazer parte da nossa galeria?
+            {messages.gallery.join}
           </h2>
           <p className="text-[#2C3E50] text-xl mb-8 max-w-2xl mx-auto">
-            Reserve seu piquenique e crie memórias inesquecíveis que ficarão para sempre
+            {messages.gallery.reserve}
           </p>
           <Button
             asChild
@@ -177,7 +179,7 @@ export default function GaleriaPage() {
             className="bg-[#A7C4BC] hover:bg-[#5B8A8A] text-white text-lg px-12"
           >
             <a href="https://wa.me/5547992459014" target="_blank" rel="noopener noreferrer">
-              Fazer Reserva
+              {messages.cta.bookNow}
             </a>
           </Button>
         </div>

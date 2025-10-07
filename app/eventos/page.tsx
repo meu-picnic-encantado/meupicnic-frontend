@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Tent, Home, Moon, Sparkles } from 'lucide-react';
+import { useI18n } from '@/src/providers/LanguageProvider';
 
 const eventos = [
   {
@@ -41,6 +42,7 @@ const eventos = [
 ];
 
 export default function EventosPage() {
+  const { messages } = useI18n();
   return (
     <div className="min-h-screen">
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
@@ -52,10 +54,10 @@ export default function EventosPage() {
         />
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
           <h1 className="text-5xl md:text-6xl font-bold mb-4 text-balance">
-            Nossos Eventos
+            {messages.events.title}
           </h1>
           <p className="text-xl md:text-2xl text-balance max-w-2xl mx-auto">
-            Escolha o piquenique perfeito para você
+            {messages.events.subtitle}
           </p>
         </div>
       </section>
@@ -64,7 +66,7 @@ export default function EventosPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-[#5B8A8A] text-4xl font-bold mb-4">
-              Tipos de Piquenique
+              {messages.events.types}
             </h2>
             <p className="text-[#2C3E50] text-lg max-w-2xl mx-auto">
               Cada opção é cuidadosamente planejada para criar a experiência perfeita para você
@@ -114,7 +116,7 @@ export default function EventosPage() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Saiba Mais
+                        {messages.cta.contactUs}
                       </a>
                     </Button>
                   </CardContent>
