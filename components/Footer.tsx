@@ -1,3 +1,4 @@
+"use client";
 import { Instagram, Phone } from 'lucide-react';
 import Image from 'next/image';
 import { useI18n } from '@/src/providers/LanguageProvider';
