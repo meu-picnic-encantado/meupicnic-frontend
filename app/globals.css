@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 44, 62, 80;
-  --background-rgb: 251, 247, 240;
-}
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -68,16 +63,6 @@
     @apply border-border;
   }
   body {
-    @apply bg-[#FBF7F0] text-[#2C3E50];
-  }
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+    @apply bg-background text-foreground;
   }
 }

@@ -1,100 +1,67 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
+import { useLanguage } from '@/context/LanguageContext';
 import { Button } from '@/components/ui/button';
 
 export function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { language, setLanguage, t } = useLanguage();
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#FBF7F0]/95 backdrop-blur-sm border-b border-[#A7C4BC]/20">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-12 h-12 bg-[#5B8A8A] rounded-full flex items-center justify-center text-white font-semibold">
-              MPE
-            </div>
-            <div className="flex flex-col">
-              <span className="text-[#5B8A8A] font-bold text-lg leading-none">Meu Picnic</span>
-              <span className="text-[#A7C4BC] text-sm leading-none">Encantado</span>
-            </div>
+    <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
+      <div className="container flex h-20 items-center justify-between px-4 md:px-8">
+        <Link href="/" className="flex items-center space-x-3">
+          <Image
+            src="https://raw.githubusercontent.com/s4nts/Meu-Picnic-Encantado/refs/heads/main/logo.png"
+            alt="Meu Picnic Encantado"
+            width={50}
+            height={50}
+            className="rounded-lg"
+          />
+          <span className="hidden md:inline-block text-xl font-semibold text-[#8B4513]">
+            {language === 'pt-BR' ? 'Meu Picnic Encantado' : 'My Enchanted Picnic'}
+          </span>
+        </Link>
+
+        <nav className="hidden md:flex items-center space-x-8">
+          <Link href="/" className="text-[#2F4F2F] hover:text-[#8B4513] transition-colors font-medium">
+            {t.nav.home}
           </Link>
+          <Link href="/eventos" className="text-[#2F4F2F] hover:text-[#8B4513] transition-colors font-medium">
+            {t.nav.events}
+          </Link>
+          <Link href="/produtos" className="text-[#2F4F2F] hover:text-[#8B4513] transition-colors font-medium">
+            {t.nav.products}
+          </Link>
+          <Link href="/galeria" className="text-[#2F4F2F] hover:text-[#8B4513] transition-colors font-medium">
+            {t.nav.gallery}
+          </Link>
+          <Link href="/nossa-historia" className="text-[#2F4F2F] hover:text-[#8B4513] transition-colors font-medium">
+            {t.nav.about}
+          </Link>
+        </nav>
 
-          <nav className="hidden md:flex items-center gap-8">
-            <Link href="/" className="text-[#2C3E50] hover:text-[#5B8A8A] transition-colors font-medium">
-              Início
-            </Link>
-            <Link href="/eventos" className="text-[#2C3E50] hover:text-[#5B8A8A] transition-colors font-medium">
-              Eventos
-            </Link>
-            <Link href="/produtos" className="text-[#2C3E50] hover:text-[#5B8A8A] transition-colors font-medium">
-              Produtos
-            </Link>
-            <Link href="/galeria" className="text-[#2C3E50] hover:text-[#5B8A8A] transition-colors font-medium">
-              Galeria
-            </Link>
-            <Button
-              asChild
-              className="bg-[#A7C4BC] hover:bg-[#5B8A8A] text-white"
-            >
-              <a href="https://wa.me/5547992459014" target="_blank" rel="noopener noreferrer">
-                Fale com a gente
-              </a>
-            </Button>
-          </nav>
-
-          <button
-            className="md:hidden text-[#5B8A8A]"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        <div className="flex items-center space-x-3">
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => setLanguage('pt-BR')}
+            className={`h-10 w-10 p-0 ${language === 'pt-BR' ? 'ring-2 ring-[#8B4513]' : ''}`}
+            title="Português"
           >
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+            <span className="text-2xl">🇧🇷</span>
+          </Button>
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => setLanguage('en-CA')}
+            className={`h-10 w-10 p-0 ${language === 'en-CA' ? 'ring-2 ring-[#8B4513]' : ''}`}
+            title="English"
+          >
+            <span className="text-2xl">🇨🇦</span>
+          </Button>
         </div>
-
-        {mobileMenuOpen && (
-          <nav className="md:hidden py-4 border-t border-[#A7C4BC]/20">
-            <div className="flex flex-col gap-4">
-              <Link
-                href="/"
-                className="text-[#2C3E50] hover:text-[#5B8A8A] transition-colors font-medium"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Início
-              </Link>
-              <Link
-                href="/eventos"
-                className="text-[#2C3E50] hover:text-[#5B8A8A] transition-colors font-medium"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Eventos
-              </Link>
-              <Link
-                href="/produtos"
-                className="text-[#2C3E50] hover:text-[#5B8A8A] transition-colors font-medium"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Produtos
-              </Link>
-              <Link
-                href="/galeria"
-                className="text-[#2C3E50] hover:text-[#5B8A8A] transition-colors font-medium"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Galeria
-              </Link>
-              <Button
-                asChild
-                className="bg-[#A7C4BC] hover:bg-[#5B8A8A] text-white w-full"
-              >
-                <a href="https://wa.me/5547992459014" target="_blank" rel="noopener noreferrer">
-                  Fale com a gente
-                </a>
-              </Button>
-            </div>
-          </nav>
-        )}
       </div>
     </header>
   );
