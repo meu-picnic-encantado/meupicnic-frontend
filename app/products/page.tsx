@@ -64,7 +64,7 @@ export default function ProductsPage() {
       <section className="bg-gradient-to-br from-[#e8f2f7] via-[#f0f7fb] to-[#a8d4f0] py-16 md:py-24">
         <div className="container px-4 md:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="font-playfair text-5xl md:text-6xl font-bold text-[#3b7aa4] mb-6">
+            <h1 className="font-inter text-5xl md:text-6xl font-bold text-[#3b7aa4] mb-6">
               {t.nav.products}
             </h1>
             <p className="text-xl text-[#1a3a4a] leading-relaxed">
@@ -92,7 +92,7 @@ export default function ProductsPage() {
                         <Icon className="w-10 h-10 text-[#3b7aa4]" />
                       </div>
                     </div>
-                    <h3 className="font-playfair text-2xl font-semibold text-[#3b7aa4] mb-4 text-center">
+                    <h3 className="font-inter text-2xl font-semibold text-[#3b7aa4] mb-4 text-center">
                       {product.name}
                     </h3>
                     <p className="text-[#1a3a4a] leading-relaxed text-center">
@@ -111,7 +111,7 @@ export default function ProductsPage() {
           <div className="max-w-4xl mx-auto">
             <Card className="border-2 border-[#5a9bc4] bg-white/90">
               <CardContent className="pt-10 pb-10 px-8">
-                <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#3b7aa4] mb-6 text-center">
+                <h2 className="font-inter text-3xl md:text-4xl font-bold text-[#3b7aa4] mb-6 text-center">
                   {language === 'pt-BR' ? 'Personalização Completa' : 'Complete Customization'}
                 </h2>
                 <p className="text-lg text-[#1a3a4a] leading-relaxed mb-8 text-center">

@@ -1,20 +1,19 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Playfair_Display, Lato } from 'next/font/google';
+import { Playfair_Display, Inter } from 'next/font/google';
 import { LanguageProvider } from '@/context/LanguageContext';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
-  variable: '--font-playfair',
+  variable: '--font-inter',
   display: 'swap',
 });
 
-const lato = Lato({
-  weight: ['300', '400', '700'],
+const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-lato',
+  variable: '--font-inter',
   display: 'swap',
 });
 
@@ -32,8 +31,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" className={`${playfair.variable} ${lato.variable}`}>
-      <body className={lato.className}>
+    <html lang="pt-BR" className={`${playfair.variable} ${inter.variable}`}>
+      <body className={inter.className}>
         <LanguageProvider>
           <div className="flex flex-col min-h-screen">
             <Header />

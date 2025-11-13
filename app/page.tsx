@@ -14,7 +14,7 @@ export default function Home() {
       <section className="relative bg-gradient-to-br from-[#e8f2f7] via-[#f0f7fb] to-[#a8d4f0] py-20 md:py-32">
         <div className="container px-4 md:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="font-playfair text-5xl md:text-7xl font-bold text-[#3b7aa4] mb-6 leading-tight">
+            <h1 className="font-inter text-5xl md:text-7xl font-bold text-[#3b7aa4] mb-6 leading-tight">
               {t.hero.title}
             </h1>
             <p className="text-2xl md:text-3xl text-[#1a3a4a] mb-6 font-light">
@@ -38,7 +38,7 @@ export default function Home() {
 
       <section className="py-20 bg-white">
         <div className="container px-4 md:px-8">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-center text-[#3b7aa4] mb-4">
+          <h2 className="font-inter text-4xl md:text-5xl font-bold text-center text-[#3b7aa4] mb-4">
             {t.events.title}
           </h2>
           <p className="text-center text-[#3b7aa4] text-lg mb-12 max-w-2xl mx-auto">
@@ -53,7 +53,7 @@ export default function Home() {
                     <HomeIcon className="w-8 h-8 text-[#3b7aa4]" />
                   </div>
                 </div>
-                <h3 className="font-playfair text-2xl font-semibold text-[#3b7aa4] mb-3 text-center">
+                <h3 className="font-inter text-2xl font-semibold text-[#3b7aa4] mb-3 text-center">
                   {t.events.basic.title}
                 </h3>
                 <p className="text-[#1a3a4a] leading-relaxed text-center">
@@ -69,7 +69,7 @@ export default function Home() {
                     <HomeIcon className="w-8 h-8 text-[#3b7aa4]" />
                   </div>
                 </div>
-                <h3 className="font-playfair text-2xl font-semibold text-[#3b7aa4] mb-3 text-center">
+                <h3 className="font-inter text-2xl font-semibold text-[#3b7aa4] mb-3 text-center">
                   {t.events.indoor.title}
                 </h3>
                 <p className="text-[#1a3a4a] leading-relaxed text-center">
@@ -85,7 +85,7 @@ export default function Home() {
                     <Moon className="w-8 h-8 text-[#3b7aa4]" />
                   </div>
                 </div>
-                <h3 className="font-playfair text-2xl font-semibold text-[#3b7aa4] mb-3 text-center">
+                <h3 className="font-inter text-2xl font-semibold text-[#3b7aa4] mb-3 text-center">
                   {t.events.night.title}
                 </h3>
                 <p className="text-[#1a3a4a] leading-relaxed text-center">
@@ -101,7 +101,7 @@ export default function Home() {
                     <Sparkles className="w-8 h-8 text-[#3b7aa4]" />
                   </div>
                 </div>
-                <h3 className="font-playfair text-2xl font-semibold text-[#3b7aa4] mb-3 text-center">
+                <h3 className="font-inter text-2xl font-semibold text-[#3b7aa4] mb-3 text-center">
                   {t.events.custom.title}
                 </h3>
                 <p className="text-[#1a3a4a] leading-relaxed text-center">
@@ -128,7 +128,7 @@ export default function Home() {
 
       <section className="py-20 bg-gradient-to-br from-[#e8f2f7] to-[#f0f7fb]">
         <div className="container px-4 md:px-8">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-center text-[#3b7aa4] mb-12">
+          <h2 className="font-inter text-4xl md:text-5xl font-bold text-center text-[#3b7aa4] mb-12">
             {t.schedule.title}
           </h2>
 
@@ -140,7 +140,7 @@ export default function Home() {
                     <Sun className="w-8 h-8 text-[#F4A460]" />
                   </div>
                 </div>
-                <h3 className="font-playfair text-2xl font-semibold text-[#3b7aa4] mb-4 text-center">
+                <h3 className="font-inter text-2xl font-semibold text-[#3b7aa4] mb-4 text-center">
                   {t.schedule.breakfast}
                 </h3>
                 <div className="space-y-2 text-[#1a3a4a] text-center">
@@ -158,7 +158,7 @@ export default function Home() {
                     <Sun className="w-8 h-8 text-[#FF8C00]" />
                   </div>
                 </div>
-                <h3 className="font-playfair text-2xl font-semibold text-[#3b7aa4] mb-4 text-center">
+                <h3 className="font-inter text-2xl font-semibold text-[#3b7aa4] mb-4 text-center">
                   {t.schedule.afternoon}
                 </h3>
                 <div className="space-y-2 text-[#1a3a4a] text-center">
@@ -175,7 +175,7 @@ export default function Home() {
                     <Moon className="w-8 h-8 text-[#4B0082]" />
                   </div>
                 </div>
-                <h3 className="font-playfair text-2xl font-semibold text-[#3b7aa4] mb-4 text-center">
+                <h3 className="font-inter text-2xl font-semibold text-[#3b7aa4] mb-4 text-center">
                   {t.schedule.night}
                 </h3>
                 <div className="space-y-2 text-[#1a3a4a] text-center">
@@ -191,7 +191,7 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="container px-4 md:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-playfair text-4xl md:text-5xl font-bold text-[#3b7aa4] mb-8">
+            <h2 className="font-inter text-4xl md:text-5xl font-bold text-[#3b7aa4] mb-8">
               {t.about.dream}
             </h2>
             <p className="text-xl text-[#3b7aa4] mb-6 font-semibold">

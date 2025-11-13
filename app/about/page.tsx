@@ -15,7 +15,7 @@ export default function AboutPage() {
       <section className="bg-gradient-to-br from-[#e8f2f7] via-[#f0f7fb] to-[#a8d4f0] py-16 md:py-24">
         <div className="container px-4 md:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="font-playfair text-5xl md:text-6xl font-bold text-[#3b7aa4] mb-6">
+            <h1 className="font-inter text-5xl md:text-6xl font-bold text-[#3b7aa4] mb-6">
               {t.about.title}
             </h1>
             <p className="text-xl text-[#1a3a4a] leading-relaxed">
@@ -35,7 +35,7 @@ export default function AboutPage() {
                     <Heart className="w-10 h-10 text-[#3b7aa4]" />
                   </div>
                 </div>
-                <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#3b7aa4] mb-6 text-center">
+                <h2 className="font-inter text-3xl md:text-4xl font-bold text-[#3b7aa4] mb-6 text-center">
                   {t.about.dream}
                 </h2>
                 <p className="text-lg text-[#1a3a4a] leading-relaxed mb-6 text-center">
@@ -54,7 +54,7 @@ export default function AboutPage() {
                     <MapPin className="w-10 h-10 text-[#3b7aa4]" />
                   </div>
                 </div>
-                <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#3b7aa4] mb-6 text-center">
+                <h2 className="font-inter text-3xl md:text-4xl font-bold text-[#3b7aa4] mb-6 text-center">
                   {t.about.history}
                 </h2>
                 <p className="text-lg text-[#1a3a4a] leading-relaxed mb-6 text-center">
@@ -85,7 +85,7 @@ export default function AboutPage() {
       <section className="py-16 bg-gradient-to-br from-[#e8f2f7] to-[#f0f7fb]">
         <div className="container px-4 md:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#3b7aa4] mb-8 text-center">
+            <h2 className="font-inter text-3xl md:text-4xl font-bold text-[#3b7aa4] mb-8 text-center">
               {t.footer.locations}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -94,7 +94,7 @@ export default function AboutPage() {
                   <div className="flex justify-center mb-4">
                     <CircleFlagsCa width={50} height={50} />
                   </div>
-                  <h3 className="font-playfair text-2xl font-semibold text-[#3b7aa4] mb-3">
+                  <h3 className="font-inter text-2xl font-semibold text-[#3b7aa4] mb-3">
                     Toronto, Canada
                   </h3>
                   <p className="text-[#1a3a4a] leading-relaxed">
@@ -108,7 +108,7 @@ export default function AboutPage() {
                   <div className="flex justify-center mb-4">
                     <CircleFlagsBr width={50} height={50} />
                   </div>
-                  <h3 className="font-playfair text-2xl font-semibold text-[#3b7aa4] mb-3">
+                  <h3 className="font-inter text-2xl font-semibold text-[#3b7aa4] mb-3">
                     Itajaí, Brasil
                   </h3>
                   <p className="text-[#1a3a4a] leading-relaxed">
@@ -123,7 +123,7 @@ export default function AboutPage() {
 
       <section className="py-16 bg-white">
         <div className="container px-4 md:px-8 text-center">
-          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#3b7aa4] mb-6">
+          <h2 className="font-inter text-3xl md:text-4xl font-bold text-[#3b7aa4] mb-6">
             {t.hero.cta}
           </h2>
           <p className="text-lg text-[#1a3a4a] mb-8 max-w-2xl mx-auto">

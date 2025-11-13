@@ -40,7 +40,7 @@ export default function EventsPage() {
       <section className="bg-gradient-to-br from-[#e8f2f7] via-[#f0f7fb] to-[#a8d4f0] py-16 md:py-24">
         <div className="container px-4 md:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="font-playfair text-5xl md:text-6xl font-bold text-[#3b7aa4] mb-6">
+            <h1 className="font-inter text-5xl md:text-6xl font-bold text-[#3b7aa4] mb-6">
               {t.events.title}
             </h1>
             <p className="text-xl text-[#1a3a4a] leading-relaxed">
@@ -66,7 +66,7 @@ export default function EventsPage() {
                         <Icon className="w-10 h-10 text-white" />
                       </div>
                     </div>
-                    <h3 className="font-playfair text-3xl font-semibold text-[#3b7aa4] mb-4 text-center">
+                    <h3 className="font-inter text-3xl font-semibold text-[#3b7aa4] mb-4 text-center">
                       {event.title}
                     </h3>
                     <p className="text-[#1a3a4a] leading-relaxed text-center text-lg">
@@ -82,7 +82,7 @@ export default function EventsPage() {
 
       <section className="py-16 md:py-24 bg-gradient-to-br from-[#e8f2f7] to-[#f0f7fb]">
         <div className="container px-4 md:px-8">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-center text-[#3b7aa4] mb-12">
+          <h2 className="font-inter text-4xl md:text-5xl font-bold text-center text-[#3b7aa4] mb-12">
             {t.schedule.title}
           </h2>
 
@@ -94,7 +94,7 @@ export default function EventsPage() {
                     <Sun className="w-8 h-8 text-[#F4A460]" />
                   </div>
                 </div>
-                <h3 className="font-playfair text-2xl font-semibold text-[#3b7aa4] mb-4 text-center">
+                <h3 className="font-inter text-2xl font-semibold text-[#3b7aa4] mb-4 text-center">
                   {t.schedule.breakfast}
                 </h3>
                 <div className="space-y-3 text-[#1a3a4a] text-center text-lg">
@@ -112,7 +112,7 @@ export default function EventsPage() {
                     <Sun className="w-8 h-8 text-[#FF8C00]" />
                   </div>
                 </div>
-                <h3 className="font-playfair text-2xl font-semibold text-[#3b7aa4] mb-4 text-center">
+                <h3 className="font-inter text-2xl font-semibold text-[#3b7aa4] mb-4 text-center">
                   {t.schedule.afternoon}
                 </h3>
                 <div className="space-y-3 text-[#1a3a4a] text-center text-lg">
@@ -129,7 +129,7 @@ export default function EventsPage() {
                     <Moon className="w-8 h-8 text-[#4B0082]" />
                   </div>
                 </div>
-                <h3 className="font-playfair text-2xl font-semibold text-[#3b7aa4] mb-4 text-center">
+                <h3 className="font-inter text-2xl font-semibold text-[#3b7aa4] mb-4 text-center">
                   {t.schedule.night}
                 </h3>
                 <div className="space-y-3 text-[#1a3a4a] text-center text-lg">
@@ -144,7 +144,7 @@ export default function EventsPage() {
 
       <section className="py-16 bg-white">
         <div className="container px-4 md:px-8 text-center">
-          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#3b7aa4] mb-6">
+          <h2 className="font-inter text-3xl md:text-4xl font-bold text-[#3b7aa4] mb-6">
             {t.hero.cta}
           </h2>
           <p className="text-lg text-[#1a3a4a] mb-8 max-w-2xl mx-auto">
