@@ -61,13 +61,13 @@ export default function ProdutosPage() {
 
   return (
     <div className="flex flex-col">
-      <section className="bg-gradient-to-br from-[#F5E6D3] via-[#FFF8E7] to-[#F0E68C] py-16 md:py-24">
+      <section className="bg-gradient-to-br from-[#e8f2f7] via-[#f0f7fb] to-[#a8d4f0] py-16 md:py-24">
         <div className="container px-4 md:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="font-playfair text-5xl md:text-6xl font-bold text-[#8B4513] mb-6">
+            <h1 className="font-playfair text-5xl md:text-6xl font-bold text-[#3b7aa4] mb-6">
               {t.nav.products}
             </h1>
-            <p className="text-xl text-[#2F4F2F] leading-relaxed">
+            <p className="text-xl text-[#1a3a4a] leading-relaxed">
               {language === 'pt-BR'
                 ? 'Descubra nossos produtos e serviços cuidadosamente selecionados para tornar seu piquenique perfeito.'
                 : 'Discover our carefully selected products and services to make your picnic perfect.'}
@@ -84,18 +84,18 @@ export default function ProdutosPage() {
               return (
                 <Card
                   key={index}
-                  className="border-2 border-[#D2B48C] hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
+                  className="border-2 border-[#5a9bc4] hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
                 >
                   <CardContent className="pt-8 pb-8">
                     <div className="flex justify-center mb-6">
-                      <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#F5E6D3] to-[#D2B48C] flex items-center justify-center">
-                        <Icon className="w-10 h-10 text-[#8B4513]" />
+                      <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#e8f2f7] to-[#5a9bc4] flex items-center justify-center">
+                        <Icon className="w-10 h-10 text-[#3b7aa4]" />
                       </div>
                     </div>
-                    <h3 className="font-playfair text-2xl font-semibold text-[#8B4513] mb-4 text-center">
+                    <h3 className="font-playfair text-2xl font-semibold text-[#3b7aa4] mb-4 text-center">
                       {product.name}
                     </h3>
-                    <p className="text-[#2F4F2F] leading-relaxed text-center">
+                    <p className="text-[#1a3a4a] leading-relaxed text-center">
                       {product.description}
                     </p>
                   </CardContent>
@@ -106,15 +106,15 @@ export default function ProdutosPage() {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-br from-[#F5E6D3] to-[#FFF8E7]">
+      <section className="py-16 bg-gradient-to-br from-[#e8f2f7] to-[#f0f7fb]">
         <div className="container px-4 md:px-8">
           <div className="max-w-4xl mx-auto">
-            <Card className="border-2 border-[#D2B48C] bg-white/90">
+            <Card className="border-2 border-[#5a9bc4] bg-white/90">
               <CardContent className="pt-10 pb-10 px-8">
-                <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#8B4513] mb-6 text-center">
+                <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#3b7aa4] mb-6 text-center">
                   {language === 'pt-BR' ? 'Personalização Completa' : 'Complete Customization'}
                 </h2>
-                <p className="text-lg text-[#2F4F2F] leading-relaxed mb-8 text-center">
+                <p className="text-lg text-[#1a3a4a] leading-relaxed mb-8 text-center">
                   {language === 'pt-BR'
                     ? 'Todos os nossos produtos e serviços podem ser personalizados para atender suas necessidades específicas. Entre em contato conosco e vamos criar juntos a experiência perfeita para você.'
                     : 'All our products and services can be customized to meet your specific needs. Contact us and let\'s create the perfect experience for you together.'}
@@ -123,7 +123,7 @@ export default function ProdutosPage() {
                   <Button
                     asChild
                     size="lg"
-                    className="bg-[#8B4513] hover:bg-[#A0522D] text-white text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all"
+                    className="bg-[#3b7aa4] hover:bg-[#2a5a7a] text-white text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all"
                   >
                     <a href="https://wa.me/5547992459014" target="_blank" rel="noopener noreferrer">
                       {t.contact.whatsapp}
@@ -133,7 +133,7 @@ export default function ProdutosPage() {
                     asChild
                     size="lg"
                     variant="outline"
-                    className="border-2 border-[#8B4513] text-[#8B4513] hover:bg-[#8B4513] hover:text-white px-8 py-6 rounded-full"
+                    className="border-2 border-[#3b7aa4] text-[#3b7aa4] hover:bg-[#3b7aa4] hover:text-white px-8 py-6 rounded-full"
                   >
                     <a
                       href="https://www.instagram.com/meupicnicencantado/"
