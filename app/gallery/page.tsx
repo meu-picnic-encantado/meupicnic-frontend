@@ -4,7 +4,7 @@ import { useLanguage } from '@/context/LanguageContext';
 import { Card, CardContent } from '@/components/ui/card';
 import Image from 'next/image';
 
-export default function GaleriaPage() {
+export default function GalleryPage() {
   const { language, t } = useLanguage();
 
   const galleryItems = [

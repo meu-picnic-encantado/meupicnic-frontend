@@ -5,7 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Sun, Moon, Home as HomeIcon, Sparkles } from 'lucide-react';
 
-export default function EventosPage() {
+export default function EventsPage() {
   const { t } = useLanguage();
 
   const events = [

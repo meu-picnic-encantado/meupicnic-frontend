@@ -7,7 +7,7 @@ import { MapPin, Heart, Globe } from 'lucide-react';
 import { CircleFlagsBr } from '@/components/icons/CircleFlagsBr';
 import { CircleFlagsCa } from '@/components/icons/CircleFlagsCa';
 
-export default function NossaHistoriaPage() {
+export default function AboutPage() {
   const { t } = useLanguage();
 
   return (

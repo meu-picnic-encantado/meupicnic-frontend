@@ -10,6 +10,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
+  SheetClose,
 } from '@/components/ui/sheet';
 import { CircleFlagsBr } from '@/components/icons/CircleFlagsBr';
 import { CircleFlagsCa } from '@/components/icons/CircleFlagsCa';
@@ -34,26 +35,25 @@ export function Header() {
           </span>
         </Link>
 
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="hidden md:flex items-center justify-center space-x-8">
           <Link href="/" className="text-[#1a3a4a] hover:text-[#3b7aa4] transition-colors font-medium">
             {t.nav.home}
           </Link>
-          <Link href="/eventos" className="text-[#1a3a4a] hover:text-[#3b7aa4] transition-colors font-medium">
+          <Link href="/events" className="text-[#1a3a4a] hover:text-[#3b7aa4] transition-colors font-medium">
             {t.nav.events}
           </Link>
-          <Link href="/produtos" className="text-[#1a3a4a] hover:text-[#3b7aa4] transition-colors font-medium">
+          <Link href="/products" className="text-[#1a3a4a] hover:text-[#3b7aa4] transition-colors font-medium">
             {t.nav.products}
           </Link>
-          <Link href="/galeria" className="text-[#1a3a4a] hover:text-[#3b7aa4] transition-colors font-medium">
+          <Link href="/gallery" className="text-[#1a3a4a] hover:text-[#3b7aa4] transition-colors font-medium">
             {t.nav.gallery}
           </Link>
-          <Link href="/nossa-historia" className="text-[#1a3a4a] hover:text-[#3b7aa4] transition-colors font-medium">
+          <Link href="/about" className="text-[#1a3a4a] hover:text-[#3b7aa4] transition-colors font-medium">
             {t.nav.about}
           </Link>
         </nav>
 
-        <div className="flex items-center md:space-x-3 w-full md:w-auto justify-between md:justify-end">
-          {/* Botões de idioma - centralizados no mobile */}
+        <div className="flex items-center justify-center md:space-x-3 w-full md:w-auto">
           <div className="flex items-center justify-center space-x-1 md:space-x-3 mx-auto md:mx-0">
             <Button
               variant="ghost"
@@ -79,7 +79,6 @@ export function Header() {
             </Button>
           </div>
 
-          {/* Menu hambúrguer para mobile - alinhado à direita */}
           <Sheet>
             <SheetTrigger asChild>
               <Button
@@ -97,37 +96,47 @@ export function Header() {
                   {language === 'pt-BR' ? 'Menu' : 'Menu'}
                 </SheetTitle>
               </SheetHeader>
-              <nav className="flex flex-col space-y-4 mt-8">
-                <Link
-                  href="/"
-                  className="text-[#1a3a4a] hover:text-[#3b7aa4] transition-colors font-medium text-lg"
-                >
-                  {t.nav.home}
-                </Link>
-                <Link
-                  href="/eventos"
-                  className="text-[#1a3a4a] hover:text-[#3b7aa4] transition-colors font-medium text-lg"
-                >
-                  {t.nav.events}
-                </Link>
-                <Link
-                  href="/produtos"
-                  className="text-[#1a3a4a] hover:text-[#3b7aa4] transition-colors font-medium text-lg"
-                >
-                  {t.nav.products}
-                </Link>
-                <Link
-                  href="/galeria"
-                  className="text-[#1a3a4a] hover:text-[#3b7aa4] transition-colors font-medium text-lg"
-                >
-                  {t.nav.gallery}
-                </Link>
-                <Link
-                  href="/nossa-historia"
-                  className="text-[#1a3a4a] hover:text-[#3b7aa4] transition-colors font-medium text-lg"
-                >
-                  {t.nav.about}
-                </Link>
+              <nav className="flex flex-col items-start space-y-4 mt-8">
+                <SheetClose asChild>
+                  <Link
+                    href="/"
+                    className="text-[#1a3a4a] hover:text-[#3b7aa4] transition-colors font-medium text-lg"
+                  >
+                    {t.nav.home}
+                  </Link>
+                </SheetClose>
+                <SheetClose asChild>
+                  <Link
+                    href="/events"
+                    className="text-[#1a3a4a] hover:text-[#3b7aa4] transition-colors font-medium text-lg"
+                  >
+                    {t.nav.events}
+                  </Link>
+                </SheetClose>
+                <SheetClose asChild>
+                  <Link
+                    href="/products"
+                    className="text-[#1a3a4a] hover:text-[#3b7aa4] transition-colors font-medium text-lg"
+                  >
+                    {t.nav.products}
+                  </Link>
+                </SheetClose>
+                <SheetClose asChild>
+                  <Link
+                    href="/gallery"
+                    className="text-[#1a3a4a] hover:text-[#3b7aa4] transition-colors font-medium text-lg"
+                  >
+                    {t.nav.gallery}
+                  </Link>
+                </SheetClose>
+                <SheetClose asChild>
+                  <Link
+                    href="/about"
+                    className="text-[#1a3a4a] hover:text-[#3b7aa4] transition-colors font-medium text-lg"
+                  >
+                    {t.nav.about}
+                  </Link>
+                </SheetClose>
               </nav>
             </SheetContent>
           </Sheet>

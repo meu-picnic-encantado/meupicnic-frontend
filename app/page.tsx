@@ -118,7 +118,7 @@ export default function Home() {
               variant="outline"
               className="border-2 border-[#3b7aa4] text-[#3b7aa4] hover:bg-[#3b7aa4] hover:text-white"
             >
-              <Link href="/eventos">
+              <Link href="/events">
                 {t.nav.events}
               </Link>
             </Button>
@@ -206,7 +206,7 @@ export default function Home() {
               variant="outline"
               className="border-2 border-[#3b7aa4] text-[#3b7aa4] hover:bg-[#3b7aa4] hover:text-white"
             >
-              <Link href="/nossa-historia">
+              <Link href="/about">
                 {t.nav.about}
               </Link>
             </Button>

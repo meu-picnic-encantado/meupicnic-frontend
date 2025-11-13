@@ -5,7 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Package, Tent, Utensils, Flower2, Camera, Music } from 'lucide-react';
 
-export default function ProdutosPage() {
+export default function ProductsPage() {
   const { t, language } = useLanguage();
 
   const products = [
