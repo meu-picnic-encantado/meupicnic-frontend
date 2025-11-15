@@ -115,8 +115,7 @@ export default function Home() {
             <Button
               asChild
               size="lg"
-              variant="outline"
-              className="border-2 border-[#3b7aa4] text-[#3b7aa4] hover:bg-[#3b7aa4] hover:text-white"
+              className="bg-[#3b7aa4] hover:bg-[#2a5a7a] text-white text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all"
             >
               <Link href="/events">
                 {t.nav.events}
@@ -203,8 +202,7 @@ export default function Home() {
             <Button
               asChild
               size="lg"
-              variant="outline"
-              className="border-2 border-[#3b7aa4] text-[#3b7aa4] hover:bg-[#3b7aa4] hover:text-white"
+              className="bg-[#3b7aa4] hover:bg-[#2a5a7a] text-white text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all"
             >
               <Link href="/about">
                 {t.nav.about}

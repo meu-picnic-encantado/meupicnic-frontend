@@ -142,8 +142,7 @@ export default function AboutPage() {
             <Button
               asChild
               size="lg"
-              variant="outline"
-              className="border-2 border-[#3b7aa4] text-[#3b7aa4] hover:bg-[#3b7aa4] hover:text-white px-8 py-6 rounded-full"
+              className="bg-[#3b7aa4] hover:bg-[#2a5a7a] text-white text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all"
             >
               <a
                 href="https://www.instagram.com/meupicnicencantado/"
