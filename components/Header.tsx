@@ -15,6 +15,7 @@ import {
 import { CircleFlagsBr } from '@/components/icons/CircleFlagsBr';
 import { CircleFlagsCa } from '@/components/icons/CircleFlagsCa';
 import { MaterialSymbolsMenuRounded } from '@/components/icons/MaterialSymbolsMenuRounded';
+import { LanguageTransition } from '@/components/LanguageTransition';
 
 export function Header() {
   const { language, setLanguage, t } = useLanguage();
@@ -30,26 +31,28 @@ export function Header() {
             height={80}
             className="rounded-lg"
           />
-          <span className="hidden md:inline-block text-xl font-semibold text-[#3b7aa4]">
-            {language === 'pt-BR' ? 'Meu Picnic Encantado' : 'My Enchanted Picnic'}
-          </span>
+          <LanguageTransition>
+            <span className="hidden md:inline-block text-xl font-semibold text-[#3b7aa4]">
+              {language === 'pt-BR' ? 'Meu Picnic Encantado' : 'My Enchanted Picnic'}
+            </span>
+          </LanguageTransition>
         </Link>
 
         <nav className="hidden md:flex items-center justify-center space-x-8">
           <Link href="/" className="text-[#1a3a4a] hover:text-[#3b7aa4] transition-colors font-medium">
-            {t.nav.home}
+            <LanguageTransition>{t.nav.home}</LanguageTransition>
           </Link>
           <Link href="/events" className="text-[#1a3a4a] hover:text-[#3b7aa4] transition-colors font-medium">
-            {t.nav.events}
+            <LanguageTransition>{t.nav.events}</LanguageTransition>
           </Link>
           <Link href="/products" className="text-[#1a3a4a] hover:text-[#3b7aa4] transition-colors font-medium">
-            {t.nav.products}
+            <LanguageTransition>{t.nav.products}</LanguageTransition>
           </Link>
           <Link href="/gallery" className="text-[#1a3a4a] hover:text-[#3b7aa4] transition-colors font-medium">
-            {t.nav.gallery}
+            <LanguageTransition>{t.nav.gallery}</LanguageTransition>
           </Link>
           <Link href="/about" className="text-[#1a3a4a] hover:text-[#3b7aa4] transition-colors font-medium">
-            {t.nav.about}
+            <LanguageTransition>{t.nav.about}</LanguageTransition>
           </Link>
         </nav>
 
@@ -93,7 +96,7 @@ export function Header() {
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <SheetHeader>
                 <SheetTitle className="text-left text-[#3b7aa4]">
-                  {language === 'pt-BR' ? 'Menu' : 'Menu'}
+                  <LanguageTransition>{language === 'pt-BR' ? 'Menu' : 'Menu'}</LanguageTransition>
                 </SheetTitle>
               </SheetHeader>
               <nav className="flex flex-col items-start space-y-4 mt-8">
@@ -102,7 +105,7 @@ export function Header() {
                     href="/"
                     className="text-[#1a3a4a] hover:text-[#3b7aa4] transition-colors font-medium text-lg"
                   >
-                    {t.nav.home}
+                    <LanguageTransition>{t.nav.home}</LanguageTransition>
                   </Link>
                 </SheetClose>
                 <SheetClose asChild>
@@ -110,7 +113,7 @@ export function Header() {
                     href="/events"
                     className="text-[#1a3a4a] hover:text-[#3b7aa4] transition-colors font-medium text-lg"
                   >
-                    {t.nav.events}
+                    <LanguageTransition>{t.nav.events}</LanguageTransition>
                   </Link>
                 </SheetClose>
                 <SheetClose asChild>
@@ -118,7 +121,7 @@ export function Header() {
                     href="/products"
                     className="text-[#1a3a4a] hover:text-[#3b7aa4] transition-colors font-medium text-lg"
                   >
-                    {t.nav.products}
+                    <LanguageTransition>{t.nav.products}</LanguageTransition>
                   </Link>
                 </SheetClose>
                 <SheetClose asChild>
@@ -126,7 +129,7 @@ export function Header() {
                     href="/gallery"
                     className="text-[#1a3a4a] hover:text-[#3b7aa4] transition-colors font-medium text-lg"
                   >
-                    {t.nav.gallery}
+                    <LanguageTransition>{t.nav.gallery}</LanguageTransition>
                   </Link>
                 </SheetClose>
                 <SheetClose asChild>
@@ -134,7 +137,7 @@ export function Header() {
                     href="/about"
                     className="text-[#1a3a4a] hover:text-[#3b7aa4] transition-colors font-medium text-lg"
                   >
-                    {t.nav.about}
+                    <LanguageTransition>{t.nav.about}</LanguageTransition>
                   </Link>
                 </SheetClose>
               </nav>

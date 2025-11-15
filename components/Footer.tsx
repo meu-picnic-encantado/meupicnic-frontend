@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 import { Instagram, Phone } from 'lucide-react';
+import { LanguageTransition } from '@/components/LanguageTransition';
 
 export function Footer() {
   const { t } = useLanguage();
@@ -12,7 +13,9 @@ export function Footer() {
       <div className="container px-4 md:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="text-center md:text-left">
-            <h3 className="font-semibold text-lg mb-4 text-[#3b7aa4]">{t.contact.title}</h3>
+            <h3 className="font-semibold text-lg mb-4 text-[#3b7aa4]">
+              <LanguageTransition>{t.contact.title}</LanguageTransition>
+            </h3>
             <div className="space-y-2 flex flex-col items-center md:items-start">
               <a
                 href="https://wa.me/5547992459014"
@@ -21,7 +24,7 @@ export function Footer() {
                 className="flex items-center justify-center space-x-2 hover:text-[#3b7aa4] transition-colors"
               >
                 <Phone className="h-4 w-4" />
-                <span>{t.contact.phone}</span>
+                <span><LanguageTransition>{t.contact.phone}</LanguageTransition></span>
               </a>
               <a
                 href="https://www.instagram.com/meupicnicencantado/"
@@ -30,34 +33,38 @@ export function Footer() {
                 className="flex items-center justify-center space-x-2 hover:text-[#3b7aa4] transition-colors"
               >
                 <Instagram className="h-4 w-4" />
-                <span>{t.contact.instagram}</span>
+                <span><LanguageTransition>{t.contact.instagram}</LanguageTransition></span>
               </a>
             </div>
           </div>
 
           <div className="text-center md:text-left">
-            <h3 className="font-semibold text-lg mb-4 text-[#3b7aa4]">{t.nav.home}</h3>
+            <h3 className="font-semibold text-lg mb-4 text-[#3b7aa4]">
+              <LanguageTransition>{t.nav.home}</LanguageTransition>
+            </h3>
             <nav className="flex flex-col items-center md:items-start space-y-2">
               <Link href="/" className="hover:text-[#3b7aa4] transition-colors">
-                {t.nav.home}
+                <LanguageTransition>{t.nav.home}</LanguageTransition>
               </Link>
               <Link href="/events" className="hover:text-[#3b7aa4] transition-colors">
-                {t.nav.events}
+                <LanguageTransition>{t.nav.events}</LanguageTransition>
               </Link>
               <Link href="/products" className="hover:text-[#3b7aa4] transition-colors">
-                {t.nav.products}
+                <LanguageTransition>{t.nav.products}</LanguageTransition>
               </Link>
               <Link href="/gallery" className="hover:text-[#3b7aa4] transition-colors">
-                {t.nav.gallery}
+                <LanguageTransition>{t.nav.gallery}</LanguageTransition>
               </Link>
               <Link href="/about" className="hover:text-[#3b7aa4] transition-colors">
-                {t.nav.about}
+                <LanguageTransition>{t.nav.about}</LanguageTransition>
               </Link>
             </nav>
           </div>
 
           <div className="text-center md:text-left">
-            <h3 className="font-semibold text-lg mb-4 text-[#3b7aa4]">{t.footer.locations}</h3>
+            <h3 className="font-semibold text-lg mb-4 text-[#3b7aa4]">
+              <LanguageTransition>{t.footer.locations}</LanguageTransition>
+            </h3>
             <p className="text-sm leading-relaxed">
               Toronto, Canada<br />
               Itajaí, Brasil
@@ -66,7 +73,7 @@ export function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-[#5a9bc4] text-center text-sm">
-          <p>{t.footer.rights}</p>
+          <p><LanguageTransition>{t.footer.rights}</LanguageTransition></p>
         </div>
       </div>
     </footer>
