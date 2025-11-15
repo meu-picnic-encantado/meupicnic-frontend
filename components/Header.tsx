@@ -59,10 +59,10 @@ export function Header() {
               variant="ghost"
               size="sm"
               onClick={() => setLanguage('pt-BR')}
-              className="h-12 w-12 md:h-10 md:w-10 p-0 flex items-center justify-center"
+              className="h-12 w-12 md:h-12 md:w-12 p-0 flex items-center justify-center"
               title="Português"
             >
-              <div className="w-6 h-6 md:w-[19px] md:h-[19px]">
+              <div className="w-6 h-6 md:w-8 md:h-8">
                 <CircleFlagsBr width="100%" height="100%" />
               </div>
             </Button>
@@ -70,10 +70,10 @@ export function Header() {
               variant="ghost"
               size="sm"
               onClick={() => setLanguage('en-CA')}
-              className="h-12 w-12 md:h-10 md:w-10 p-0 flex items-center justify-center"
+              className="h-12 w-12 md:h-12 md:w-12 p-0 flex items-center justify-center"
               title="English"
             >
-              <div className="w-6 h-6 md:w-[19px] md:h-[19px]">
+              <div className="w-6 h-6 md:w-8 md:h-8">
                 <CircleFlagsCa width="100%" height="100%" />
               </div>
             </Button>
@@ -84,10 +84,10 @@ export function Header() {
               <Button
                 variant="ghost"
                 size="sm"
-                className="md:hidden h-14 w-14 p-0 flex items-center justify-center text-[#1a3a4a] hover:text-[#3b7aa4]"
+                className="md:hidden h-10 w-10 p-0 flex items-center justify-center text-[#1a3a4a] hover:text-[#3b7aa4]"
                 aria-label="Menu"
               >
-                <MaterialSymbolsMenuRounded width={57} height={57} />
+                <MaterialSymbolsMenuRounded width={24} height={24} />
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
